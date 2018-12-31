@@ -1,0 +1,468 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Choose Doctor</title>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    </script>
+		<!---- animated-css ---->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery.corner.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!---- animated-css ---->
+    <!---- start-smoth-scrolling---->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!---- start-smoth-scrolling---->
+    <!----webfonts--->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <!---//webfonts--->
+    <!----start-top-nav-script---->
+    <script>
+        $(function () {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
+            $(pull).on('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function () {
+                var w = $(window).width();
+                if (w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+    <!----//End-top-nav-script---->
+</head>
+<body>
+    <div class="bg4">
+        <div class="container">
+            <div id="home" class="header ">
+                <div class="top-header">
+                    <div class="logo">
+                        <a href="#">OTC</a>
+                    </div>
+                    <!----start-top-nav---->
+                    <nav class="top-nav">
+                        <ul class="top-nav" id="nav">
+                            <li><a href="#about" class="scroll" style="width: 211.6px; height: 61.6px;">My Account</a></li>
+
+                            <li>
+                                <a href="#" class="scroll" style="width: 211.6px; height: 61.6px;">Contact</a>
+                            </li>
+                            <li><a href="#about" class="scroll" style="width: 211.6px; height: 61.6px;">Available Patient<span class="caret"></span></a>
+
+                                <ul class="dropdown-submenu">
+                                    <a class="test" style="width: 211.6px; height: 61.6px;" href="#">Patient List</a>
+
+                                </ul>
+                            </li>
+                            <li class="page-scroll"><a href="#" class="scroll" style="width: 211.6px; height: 61.6px;">Patient Record <span class="caret"></span></a>
+                                <ul class="dropdown-submenu">
+                                    <a class="test" style="width: 211.6px; height: 61.6px;" href="#">Medical History</a>
+
+                                </ul>
+
+
+
+                            </li>
+
+                            <li>
+                                <a class="test" href="#">Mr.X<span class="caret"></span></a>
+                                <ul class="dropdown-submenu">
+
+                                    <a class="test" href="#">Log Out</a>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" id="pull">
+                            <img src="images/nav-icon.png" title="menu" /></a>
+                    </nav>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-info">
+            <div class="container">
+                <div class="banner-info-label1">
+                    <div class="signup-page">
+                        <div class="signupform">
+                            <form class="signup-form">
+                                <label style="float: left; font-size: 1.7em">Choose doctor</label>
+                                <br />
+                                <br />
+                                <hr style="border: inset;" />
+
+
+
+                                <div class="row">
+                                    <div id="a" class="col-xs-12 col-sm-6 col-md-3">
+                                        <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg01.jpg">
+                                            <figure>
+                                                <img src="Images\doc1.jpg" alt="">
+                                            </figure>
+
+                                        </a>
+                                        <button>Make an Appointment</button>
+                                    </div>
+                                    <div id="b" class="col-xs-12 col-sm-6 col-md-3">
+                                        <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg02.jpg">
+                                            <figure>
+                                                <img src="Images\doc2.png" alt="">
+                                            </figure>
+                                        </a>
+                                        <button>Make an Appointment</button>
+                                    </div>
+                                    <div id="c" class="col-xs-12 col-sm-6 col-md-3">
+                                        <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg03.jpg">
+                                            <figure>
+                                                <img src="Images\doc3.png" alt="">
+                                            </figure>
+                                        </a>
+                                        <button>Make an Appointment</button>
+                                    </div>
+                                    <!-- <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <a href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/placeimg04.jpg">
+                                            <figure>
+                                                 <img src="Images\doc1.jpg" alt="">
+                                            </figure>
+                                        </a>
+                                    </div>-->
+
+                                </div>
+
+                                <br />
+                                <div id="aa" style="background-color: #d6e9c6; text-align: left; display:none">
+                                    <br />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-12">
+                                            <label> Cost Per Visit: $59.00 (may be covered by insurance) </label>
+                                        </div>
+                                    </div>
+
+                                     <hr style="border: inset;" />
+
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label> Languages : <br /> Spanish, English </label>
+                                        </div>
+                                         <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label> Professional Education :<br /> University Of California</label>
+                                        </div>
+                                    </div>
+
+                                     <hr style="border: inset;" />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label> Years Of Experience :<br /> 16 years </label>
+                                        </div>
+
+                                         <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label>Board Certified In :<br /> Family Medicine </label>
+                                        </div>
+                                    </div>
+                                     <hr style="border: inset;" />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label>Primary care provider :<br /> No </label>
+                                        </div>
+
+                                         <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label>Location :<br /> Vestavia Hill , AL </label>
+                                        </div>  
+                                    </div>
+
+
+                                </div>
+
+                                <div id="bb" style="background-color: #d6e9c6; text-align: left; display:block; padding-left: 5px;">
+                                     <br />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-12">
+                                            <label> Cost Per Visit: $29.00 (may be covered by insurance) </label>
+                                        </div>
+                                    </div>
+
+                                     <hr style="border: inset;" />
+
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label> Languages : <br /> English </label>
+                                        </div>
+                                         <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label> Professional Education :<br /> University Of Michigan</label>
+                                        </div>
+                                    </div>
+
+                                     <hr style="border: inset;" />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label> Years Of Experience :<br /> 3 years </label>
+                                        </div>
+
+                                         <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label>Board Certified In :<br /> Physician </label>
+                                        </div>
+                                    </div>
+                                     <hr style="border: inset;" />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label>Primary care provider :<br /> Yes </label>
+                                        </div>
+
+                                         <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label>Location :<br />  Hill Town, FL </label>
+                                        </div>  
+                                    </div>
+                                </div>
+
+                                <div id="cc" style="background-color: #d6e9c6; text-align: left; display:none">
+                                     <br />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-12">
+                                            <label> Cost Per Visit: $19.00 (may be covered by insurance) </label>
+                                        </div>
+                                    </div>
+
+                                     <hr style="border: inset;" />
+
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label> Languages : <br /> Spanish </label>
+                                        </div>
+                                         <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label> Professional Education :<br /> University Of Maryland</label>
+                                        </div>
+                                    </div>
+
+                                     <hr style="border: inset;" />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label> Years Of Experience :<br /> 1 years </label>
+                                        </div>
+
+                                         <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label>Board Certified In :<br /> Family Medicine </label>
+                                        </div>
+                                    </div>
+                                     <hr style="border: inset;" />
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label>Primary care provider :<br /> No </label>
+                                        </div>
+
+                                         <div class="col-xs-12 col-sm-6 col-md-6">
+                                            <label>Location :<br /> Vestavia Hill , MD </label>
+                                        </div>  
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+                <h1 data-wow-delay="0.5s"></h1>
+                <div class="top-banner-grids" data-wow-delay="0.4s">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <style>
+        .top-nav ul li a {
+            font-size: 1.227em;
+        }
+    </style>
+    <style>
+        .top-nav ul li a {
+            font-size: 1.22em;
+        }
+
+        .signup-page {
+            width: 1100px;
+        }
+
+        hr {
+            border-top: 1px solid none;
+            background-color: lightgreen;
+            margin-top: 0px;
+        }
+
+        #menu {
+            border: none;
+            margin: 0px;
+            font-size: 1em;
+            font-weight: 300;
+        }
+
+        #nav {
+            height: 35px;
+            list-style: none;
+            margin: 0;
+            width: 1010px;hr
+            height: 50px;
+            float: left;
+            text-align: center;
+        }
+
+            #nav li {
+                display: inline-block;
+                position: relative;
+                float: left;
+            }
+
+                #nav li a {
+                    display: inline-block;
+                    width: 163.1px;
+                    line-height: 20px;
+                    text-decoration: none;
+                    color: #ffffff;
+                }
+
+                #nav li li {
+                    float: left;
+                }
+
+                    #nav li li a {
+                        display: block;
+                        font-size: 0.2em;
+                        width: 60px;
+                    }
+
+                #nav li:hover {
+                    background: #003f20;
+                }
+
+            /*--- Sublist Styles ---*/
+            #nav ul {
+                position: absolute;
+                padding: 0px;
+                left: 0;
+                display: none;
+            }
+
+                #nav ul li ul a {
+                    line-height: 20px;
+                    width: 163px;
+                }
+
+            /*--- Hide Sub Sublists ---*/
+            #nav li:hover ul ul {
+                display: none;
+            }
+
+            /*--- Sublevel UL's display and position on hover ---*/
+            #nav li:hover ul {
+                display: block;
+                background-color: lightgreen;
+            }
+
+            #nav li li:hover ul {
+                display: block;
+            }
+
+        h3 {
+            text-align: center;
+            font-size: 1.65em;
+            margin: 0 0 30px;
+        }
+
+        /*div {
+            display: flex;
+            flex-wrap: wrap;
+        }*/
+
+        /*a {
+            display: inline-block;
+            margin-bottom: 8px;
+            width: calc(50% - 4px);
+            margin-right: 8px;
+            text-decoration: none;
+            color: black;
+        }*/
+
+        a:nth-of-type(2n) {
+            margin-right: 0;
+        }
+
+        @media screen and (min-width: 50em) {
+            a {
+                width: calc(25% - 6px);
+            }
+
+                a:nth-of-type(2n) {
+                    margin-right: 8px;
+                }
+
+                a:nth-of-type(4n) {
+                    margin-right: 0;
+                }
+        }
+
+        a:hover img {
+            transform: scale(1.15);
+        }
+
+        figure {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /*figcaption {
+            margin-top: 15px;
+        }*/
+
+        img {
+            border: none;
+            max-width: 100%;
+            width: 500px;
+            height: 200px;
+            display: block;
+            background: #ccc;
+            transition: transform .2s ease-in-out;
+        }
+
+        /*.p a {
+            display: inline;
+            font-size: 13px;
+            margin: 0;
+            text-decoration: underline;
+            color: blue;
+        }*/
+
+        /*.p {
+            text-align: center;
+            font-size: 13px;
+            padding-top: 100px;
+        }*/
+    </style>
+</body>
+</html>
+
